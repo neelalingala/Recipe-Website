@@ -1,0 +1,91 @@
+/* Set background gradient */
+body {
+    background-color: #023d1e; /* Set background to white */
+    font-family: Arial, sans-serif;
+    color: #333333; /* Ensures text is readable on white background */
+}
+
+/* Style header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Ensure header background is also white */
+}
+
+/* Style recipe cards */
+.recipe-card {
+    background-color: #ffffff; /* Make recipe cards background white, previously green */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc; /* Add a light border for some definition */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Style footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff; /* Ensure footer background is also white */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points from lists */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation links */
+li {
+    display: inline; /* Display links horizontally */
+    margin-right: 20px; /* Add some spacing between links */
+}
+
+li a {
+    color: #007BFF; /* Set links to blue for visibility */
+    text-decoration: none; /* Remove underline from links */
+}
+
+li a:hover {
+    text-decoration: underline; /* Add underline on hover for better user interaction */
+}
+@media (max-width: 768px) {
+    header, footer {
+        padding: 10px;
+    }
+
+    .recipe-card {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    ul, li {
+        text-align: center;
+        display: block;
+        margin: 5px 0; 
+    }
+
+    li a {
+        font-size: larger; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header, footer {
+        padding: 5px;
+    }
+
+    .recipe-card {
+        margin: 5px;
+        padding: 5px;
+    }
+}
